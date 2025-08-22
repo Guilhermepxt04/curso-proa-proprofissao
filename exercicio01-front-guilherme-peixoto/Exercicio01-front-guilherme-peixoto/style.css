@@ -1,0 +1,39 @@
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 65px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(images/imagem.jpeg);
+    background-repeat: no-repeat;
+    background-size: 92%;
+    background-position: 60% -2%;
+    background-color: #000066;
+}
+
+p {
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    padding: 4px;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

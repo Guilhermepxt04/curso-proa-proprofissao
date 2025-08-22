@@ -1,0 +1,318 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+
+}
+
+main {
+
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.9em;
+}
+
+header {
+
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+
+}
+
+@media (max-width: 693px) {
+
+    header {
+
+        font-size: 2em;
+
+    }
+
+}
+
+@media (max-width: 554px) {
+
+    header {
+
+        font-size: 1.7em;
+
+    }
+
+}
+
+@media (max-width: 472px) {
+
+    header {
+
+        font-size: 1.5em;
+
+    }
+
+}
+
+nav#topo {
+
+    background-color: #000098;
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+nav#topo a {
+
+    color: #fff;
+    text-decoration: none;
+    width: 16.6%;
+
+}
+
+@media (max-width: 1247px) {
+
+    nav#topo {
+
+        font-size: 0.8em;
+
+    }
+
+}
+
+@media (max-width: 997px) {
+
+    nav#topo {
+
+        font-size: 0.6em;
+
+    }
+
+}
+
+@media (max-width: 748px) {
+
+    nav#topo {
+
+        font-size: 0.5em;
+
+    }
+
+}
+
+@media (max-width: 623px) {
+
+    nav#topo {
+
+        font-size: 0.4em;
+
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    nav#topo {
+
+        font-size: 0.3em;
+
+    }
+    
+}
+
+nav#topo a:hover {
+
+    color: #000;
+    background-color: #fff;
+    transition: 1s all;
+
+}
+
+#nav_esquerda {
+
+    background-color: #999999;
+    width: 20%;
+    height: 650px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    margin: auto;
+
+}
+
+#nav_esquerda a {
+
+    color: #fff;
+    text-decoration: none;
+    height: 10%;
+    border-bottom: solid 1px #Fff;
+    font-size: 0.8em;
+
+}
+
+@media (max-width: 514px) {
+
+
+
+}
+
+#nav_esquerda a:hover {
+
+    background-color: #000;
+    transition: 1s all;
+
+}
+
+section {
+
+    color: #000;
+    background: #fff;
+    width: 60%;
+    height: 650px;
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+section div#tablet {
+
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: 30%;
+
+}
+
+section div#tablet img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+section p {
+
+    width: 90%;
+    margin: auto;
+    background-color: rgba(10, 122, 167, 0.37);
+    margin-top: 20px;
+    color: #000;
+    text-align: left;
+    height: 20%;
+    font-size: 0.7em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media (max-width: 1270px) {
+
+    section p {
+
+        font-size: 0.6em;
+
+    }
+
+}
+
+@media (max-width: 942px) {
+
+    section p {
+
+        font-size: 0.5em;
+
+    }
+    
+}
+
+
+@media (max-width: 599px) {
+
+    section p {
+
+        font-size: 0.40em;
+
+    }
+
+}
+
+#vermelha {
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 230px;
+    margin-top: 10px;
+
+}
+
+.divs_cinzas {
+
+    width: 30%;
+    height: 90%;
+    
+}
+
+#floresta img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#montanha img {
+
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#sol img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+aside {
+
+    width: 20%;
+    height: 660px;
+    float: left;
+
+}
+
+aside img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+footer {
+
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    clear: left;
+
+}
