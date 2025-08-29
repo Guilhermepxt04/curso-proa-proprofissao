@@ -1,0 +1,62 @@
+body {
+
+    text-align: center;
+
+}
+
+img {
+
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+
+
+}
+
+div {
+
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    border: 10px double;
+    font-size: 16px;
+    text-align: justify;
+    top: 250px;
+    left: 600px;
+    visibility: hidden;
+
+}
+
+div img {
+
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+
+}
+
+#bumblebee {
+
+    background-color: #eccd1e;
+    color: black;
+    border-color: #fffb02;
+
+}
+
+#katchau {
+
+    background-color: #e6a6a6;
+    color: black;
+    border-color: #ff9102;
+
+}
+
+#impala {
+
+    background-color: #7e7e7e;
+    color: black;
+    border-color: #cacaca;
+
+}
