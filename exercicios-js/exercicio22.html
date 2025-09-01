@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario com bonus variado</title>
+</head>
+<body>
+
+    <h1>Salario com bonus variado</h1>
+
+    <script>
+
+        let salario = parseFloat(prompt("Digite o salario do seu funcionario: "))
+        let bonus = 0
+
+        if (salario > 2000.00) {
+
+            bonus = 0.10
+
+        } else {
+
+            bonus = 0.05
+
+        }
+
+        let salarioComBonus = salario + (salario * bonus) 
+
+        document.write("O salario do funcionario é de: R$ " + salario.toFixed(2) + "<br>" + "com o bonus fica R$ " + salarioComBonus.toFixed(2))
+
+    </script>
+    
+</body>
+</html>

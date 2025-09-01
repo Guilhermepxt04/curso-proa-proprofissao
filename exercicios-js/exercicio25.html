@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faltas</title>
+</head>
+<body>
+    
+    <h1>Faltas</h1>
+
+    <script>
+
+        let faltas = parseInt(prompt("Digite o numero de faltas do aluno: "))
+        
+        document.write("O aluno está com " + faltas + " faltas" + "<br>" )
+
+        if (faltas > 15) {
+
+            document.write("O aluno está reprovado por falta")
+
+        } else if (faltas >=7 && faltas <= 15) {
+
+            document.write("Cuidado com suas faltas, está perto do limite de mais que 15 faltas")
+
+        } else (
+
+            document.write("Muito bem, está com poucas faltas")
+
+        )
+
+    </script>
+
+</body>
+</html>

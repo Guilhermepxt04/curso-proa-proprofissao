@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando media do aluno</title>
+</head>
+<body>
+    
+    <h1> Calculando media do aluno</h1>
+
+    <script>
+
+        alert("Digite as notas com valores entre 0 e 10")
+
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "))
+        let nota3 = parseFloat(prompt("Digite a terceira nota: "))
+
+        if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10) {
+            alert("Alguma das notas está com um valor menor que 0 ou maior que 10, por favor atualize a pagina e digite as notas novamente")
+        }else {
+
+            let media = ((nota1 * 2) + (nota2 * 3) + (nota3* 5)) / 3
+
+            document.write("A media do aluno é: " + media.toFixed(2))
+        }
+
+    </script>
+
+</body>
+</html>

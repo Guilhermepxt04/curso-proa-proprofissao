@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario do Funcionario</title>
+</head>
+<body>
+    
+    <h1>Salario liquido do Funcionario</h1>
+
+    <script>
+
+        let salario = parseFloat(prompt("Digite o salario do funcionário: "))
+
+        let salarioLiquido = salario + (salario * 0.05);
+
+        document.write("O salario liquido do funcinario é: R$" + salarioLiquido.toFixed(2));
+
+    </script>
+
+</body>
+</html>

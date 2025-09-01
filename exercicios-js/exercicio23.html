@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias do mes</title>
+</head>
+<body>
+    
+    <h1>Dias do mes</h1>
+
+    <script>
+
+        const meses = [
+
+            ['janeiro', 31],
+            ['fevereiro', 28],
+            ['março', 31],
+            ['abril', 30],
+            ['maio', 31],
+            ['junho', 30],
+            ['julho', 31],
+            ['agosto', 31],
+            ['setembro', 30],
+            ['outubro', 31],
+            ['novembro', 30],
+            ['dezembro',  31]
+
+        ];
+
+        let mes = prompt("Digite o nome do mês: ").toLowerCase();
+        let mesEncontrado = false
+        
+        meses.forEach(m => {
+
+            if (m[0] == mes) {
+
+             document.write("O mês de " + mes + " tem " + m[1] + " dias");
+             mesEncontrado = true;
+
+            }  
+        });
+
+        if (mesEncontrado == false) {
+
+            document.write("Mês não encontrado. Por favor reinicie a pagina e digite um mês valido")
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total de produtos</title>
+</head>
+<body>
+    
+    <h1>Total de produtos</h1>
+
+    <script>
+
+        let produtosDiferentes = parseInt(prompt("Quantos produtos diferentes você vai digitar?: "))
+        let totalCompra = 0
+
+        for (i = 0; i<produtosDiferentes; i++) {
+
+            let codigoProduto = parseInt(prompt("Digite o codigo do produto: "))
+            let quantidade = parseInt(prompt("Quantos desse produto você comprou: "))
+            let valorProduto = parseFloat(prompt("Digite o valor do produto: "))
+            totalCompra += quantidade * valorProduto
+
+        }
+
+        document.write("O total da compra ficou de R$" + totalCompra.toFixed(2))
+
+    </script>
+
+</body>
+</html>

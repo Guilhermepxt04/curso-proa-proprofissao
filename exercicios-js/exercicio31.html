@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salarios minimos</title>
+</head>
+<body>
+
+    <h1>Salarios minimos</h1>
+
+    <script>
+
+        let salarioMinimo = parseFloat(prompt("Digite o salario minimo atual: "))
+        let salario = parseFloat(prompt("Digite o salario do funcionario: "))
+        
+
+        let quantidadeDeMinimos = salario / salarioMinimo
+
+        document.write("O funcionario recebe equivalente a " + quantidadeDeMinimos.toFixed(2) + " salarios minimos")
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de notas</title>
+</head>
+<body>
+    
+    <h1>Tabela de notas</h1>
+
+    <script>
+
+        let nota = parseFloat(prompt("Digite a nota da prova do aluno: "))
+
+        if (nota >= 7) {
+
+            document.write("Aprovado")
+        } else if (nota >= 4 && nota <= 6) {
+            document.write("Recuperação")
+        } else {
+            document.write("Reprovado")
+        }
+
+    </script>
+
+</body>
+</html>
