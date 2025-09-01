@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando media com js</title>
+</head>
+<body>
+    
+    <h1> Calculando media com js</h1>
+
+    <script>
+
+        let quantidade = parseInt(prompt("Quantos numeros voce vai digitar: "));
+        let soma = 0
+
+        for (let i = 1; i < quantidade + 1; i++) {
+
+            let numero = parseFloat(prompt("Digite o " + i + " numero: "));
+            soma = soma + numero;
+
+        }
+
+        let media = soma / quantidade;
+
+        if (media >= 6) {
+            document.write("Aprovado")
+        }
+        else {
+            document.write("Reprovado")
+        }
+
+        
+
+    </script>
+
+</body>
+</html>
