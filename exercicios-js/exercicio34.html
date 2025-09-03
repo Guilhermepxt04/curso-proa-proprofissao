@@ -14,11 +14,17 @@
         let idade = parseInt(prompt("Digite sua idade: "));
 
         if (idade >= 18 && idade <=70) {
+
             document.write("VOTO OBRIGATORIO");
-        } else if (idade <16) {
-            document.write("Você ainda não pode votar");
+
+        } else if (idade >= 16 && idade < 18 || idade > 70) {
+
+            document.write("VOTO FACULTATIVO")
+
         } else {
-            document.write("VOTO FACULTATIVO");
+
+            document.write("VOCE AINDA NAO PODE VOTAR")
+
         }
 
     </script>

@@ -11,7 +11,7 @@
 
     <script>
 
-        alert("Digite as notas com valores entre 0 e 10")
+        alert   ("Digite as notas com valores entre 0 e 10")
 
         let nota1 = parseFloat(prompt("Digite a primeira nota: "))
         let nota2 = parseFloat(prompt("Digite a segunda nota: "))
@@ -21,7 +21,7 @@
             alert("Alguma das notas está com um valor menor que 0 ou maior que 10, por favor atualize a pagina e digite as notas novamente")
         }else {
 
-            let media = ((nota1 * 2) + (nota2 * 3) + (nota3* 5)) / 3
+            let media = ((nota1 * 2) + (nota2 * 3) + (nota3* 5)) / 10
 
             document.write("A media do aluno é: " + media.toFixed(2))
         }

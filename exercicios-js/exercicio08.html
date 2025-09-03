@@ -11,17 +11,17 @@
 
     <script>
 
-        let x = parseFloat(prompt("Digite o primeiro numero"))
-        let y = parseFloat(prompt("Digite o segundo numero"))
-        let z = 0
+        let numero1 = parseInt(prompt("Digite o primeiro numero: "))
+        let numero2 = parseInt(prompt("Digite o segundo numero: "))
+        let reserva = 0
 
-        document.write("Antes da troca os valores são X=" + x + " Y=" + y + "<br>")
+        document.write("Antes da troca os valores são X = " + numero1 + " Y = " + numero2 + "<br>")
 
-        z = x
-        x = y
-        y = z
+        reserva = numero1
+        numero1 = numero2
+        numero2 = reserva
 
-        document.write("Depois da troca os valores são X=" + x + " Y=" + y)
+        document.write("Depois da troca os valores são X = " + numero1 + " Y = " + numero2)
 
     </script>
 
