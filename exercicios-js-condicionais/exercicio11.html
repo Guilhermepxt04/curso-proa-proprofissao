@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor</title>
+</head>
+<body>
+    
+    <h1> Vendedor </h1>
+
+    <script>
+
+        let nome = prompt("Digite o nome do vendedor: ")
+        let salario = parseFloat(prompt("Digite o salario fixo do vendedor: "))
+        let vendas = parseFloat(prompt("Digite o total do valor com as vendas: "))
+
+        let salarioFinal = salario + (vendas / 100 * 15)
+
+        document.write("O salario final do vendedor é de: R$" + salarioFinal.toFixed(2))
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrescente </title>
+</head>
+<body>
+    
+    <h1> Decrescente  </h1>
+
+    <script>
+
+        let A = parseInt(prompt("Digie o numero A: "))
+        let B = parseInt(prompt("Digie o numero B: "))
+        let C = parseInt(prompt("Digie o numero C: "))
+
+        let resultado;
+
+        if (A >= B && A >= C) {
+            if (B >= C) {
+                resultado = A + ", " + B + ", " + C;
+            } else {
+                resultado = A + ", " + C + ", " + B;
+            }
+
+        } else if (B >= A && B >= C) {
+            if (A >= C) {
+                resultado = B + ", " + A + ", " + C;
+            } else {
+                resultado = B + ", " + C + ", " + A;
+            }
+
+        } else {
+            if (A >= B) {
+                resultado = C + ", " + A + ", " + B;
+            } else {
+                resultado = C + ", " + B + ", " + A;
+            }
+        }
+
+        document.write("A lista dos numeros de forma decrescente: " + resultado)
+
+        /*let lista = [A, B, C]
+        
+        document.write("Lista dos numeros de forma decrescente: " + lista.sort(function(a, b) { return (b - a)}))
+        */
+
+    </script>
+
+</body>
+</html>

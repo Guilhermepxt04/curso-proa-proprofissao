@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisivel por 10, 5 ou 2</title>
+</head>
+<body>
+    
+    <h1> Divisivel por 10, 5 ou 2 </h1>
+
+    <script>
+
+        let x = parseFloat(prompt("Digite um numero: "))
+
+
+        if (isNaN(x)) {
+
+            alert("Por favor reinicie a pagina e digite um numero valido")
+
+        } else if (x % 10 == 0 ) {
+
+            document.write("O numero " + x + " é divisivel por 10, 5 e 2" + "<br>")
+
+        } else if (x % 5 == 0 ) {
+
+            document.write("O numero " + x + " é divisivel por 5" + "<br>")
+
+        } else if (x % 2 == 0 ) {
+
+            document.write("O numero " + x + " é divisivel por 2")
+
+        } else {
+
+            document.write("O numero " + x + " não é divisivel por 10, 5 ou 2")
+
+        }
+
+
+    </script>
+
+</body>
+</html>

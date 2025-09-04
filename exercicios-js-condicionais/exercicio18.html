@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoa mais nova</title>
+</head>
+<body>
+    
+    <h1>Pessoa mais nova</h1>
+
+    <script>
+
+        let flagPessoaNova = 9999
+        let nomePessoaNova
+
+        for (i=0; i<10; i++) {
+
+            let nome = prompt("Digite o nome da pessoa")
+            let idade = parseInt(prompt("Digite a " + (i+1) + " idade"))
+
+            if (idade < flagPessoaNova) {
+
+                nomePessoaNova = nome
+                flagPessoaNova = idade
+
+            }
+
+        }
+
+
+
+        document.write("O nome da pessoa mais nova é: " + nomePessoaNova)
+
+    </script>
+
+</body>
+</html>
