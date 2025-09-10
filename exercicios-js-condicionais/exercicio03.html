@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credito Especial</title>
+</head>
+<body>
+    
+    <h1> Credito Especial </h1>
+
+    <script>
+
+        let saldoMedio = parseFloat(prompt("Digite o saldo medio do cliente: "));
+
+        if (saldoMedio >= 0 && saldoMedio <= 500 ){
+
+            document.write("Saldo Medio: " + saldoMedio + "<br>")
+            document.write("Nenhum credito disponivel, saldo medio baixo demais")
+
+        } else if (saldoMedio >= 501 && saldoMedio <= 1000){
+
+            document.write("Saldo Medio: " + saldoMedio + "<br>")
+            document.write("30% de credito disponivel: " + (saldoMedio / 100 * 30))
+
+        } else if (saldoMedio >= 1001 && saldoMedio <= 3000){
+
+            document.write("Saldo Medio: " + saldoMedio + "<br>")
+            document.write("40% de credito disponivel: " + (saldoMedio / 100 * 40))
+
+        } else if (saldoMedio >= 3001){
+
+            document.write("Saldo Medio: " + saldoMedio + "<br>")
+            document.write("50% de credito disponivel: " + (saldoMedio / 100 * 50))
+
+        };
+
+    </script>
+
+</body>
+</html>

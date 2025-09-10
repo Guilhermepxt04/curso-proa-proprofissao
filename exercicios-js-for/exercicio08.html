@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior de idade</title>
+</head>
+<body>
+    
+    <h1>Maior de idade</h1>
+
+    <script>
+
+        let maiorIdade = 0
+
+        for(let i = 1; i<=20; i++) {
+
+            let idade = parseInt(prompt("Digite a " + i + " idade: "))
+            if (idade >= 18) {
+                maiorIdade +=1
+            }
+        }
+
+        document.write("Nesse grupo de 20 pessoas temos: " + maiorIdade + " pessoas maiores de idade")
+
+    </script>
+
+</body>
+</html>

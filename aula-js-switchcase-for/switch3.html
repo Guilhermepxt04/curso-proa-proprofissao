@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> COMBOS FAST FOOD </h1>
+
+    <h2> Combo 1</h2>
+
+    <ul type="none">
+        <li>Big Mac</li>
+        <li>Refrigerante</li>
+        <li>Batata pequena</li>
+    </ul>
+
+    <h2> Combo 2</h2>
+
+    <ul type="none">
+        <li>Big Mac</li>
+        <li>Refrigerante</li>
+        <li>Batata pequena</li>
+    </ul>
+
+    <h2> Combo 3</h2>
+
+    <ul type="none">
+        <li>Big Mac</li>
+        <li>Refrigerante</li>
+        <li>Batata pequena</li>
+    </ul>
+
+    <h2> Combo 4</h2>
+
+    <ul type="none">
+        <li>Big Mac</li>
+        <li>Refrigerante</li>
+        <li>Batata pequena</li>
+    </ul>
+
+    <h2> Combo 5</h2>
+
+    <ul type="none">
+        <li>Big Mac</li>
+        <li>Refrigerante</li>
+        <li>Batata pequena</li>
+    </ul>
+
+    <button onclick="escolhaCombo()"> Escolha seu combo </button>
+
+    <script >
+
+        function escolhaCombo() {
+
+            let combo = parseInt(prompt("Digite o numero do combo: "))
+
+            switch (combo) {
+                case 1:
+                    document.write("Lanche: Big mac " + "<br>" + "Bebida: Refrigerante" + "<br>" + "Batata pequena")
+                    break;
+                case 2:
+                    document.write("Lanche: Duplo cheddar Mcmelt " + "<br>" + "Bebida: Refrigerante ou suco " + "<br>" + "Batata media")
+                    break;
+                case 3:
+                    document.write("Lanche:  Duplo Burguer Bacon" + "<br>" + "Bebida: Refrigerante ou suco" + "<br>" + "Batata grande")
+                    break;
+                case 4:
+                    document.write("Lanche: Triplo Burguer " + "<br>" + "Bebida: Refrigerante ou suco " + "<br>" + "Batata com cheddar e bacon pequena")
+                    break;
+                case 5:
+                    document.write("Lanche: Club House " + "<br>" + "Bebida: Refrigerante ou suco" + "<br>" + "Batata com cheddar e bacon media")
+                    break;
+                default:
+                    document.write("Valor invalido")
+                }
+        }
+
+    </script>
+
+</body>
+</html>

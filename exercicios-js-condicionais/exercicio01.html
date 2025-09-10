@@ -9,10 +9,71 @@
     
     <h1> Cardapio </h1>
 
+    <p>Pratos principais: 1-Vegetariano  | 2-Peixe | 3-Frango | 4-Carne"</p>
+    <p>Sobremesa: 1-Abacaxi  | 2-Sorvete Diet | 3-Mouse Diet | 4-Mouse Chocolate</p>
+    <p>Bebida: 1-Chá  | 2-Suco de Laranja | 3-Suco de melao | 4-Refrigerante Diet</p>
+
+    <button onclick="montarCardapio()"> Montar Cardapio</button>
+
     <script>
 
-        let calorias = parseInt(prompt("Digite a quantidade total de calorias: "))
+        function montarCardapio() {
+        let caloriasPrato = 0;
+        let caloriasSobremesa = 0;
+        let caloriasBebida = 0;
 
+
+        let prato = parseInt(prompt("Digite qual seu prato principal: ").toLowerCase());
+        let sobremesa = parseInt(prompt("Digite qual a sua sobremesa: ").toLowerCase());
+        let bebida = parseInt(prompt("Digite sua bebida: ").toLowerCase());
+
+        switch (prato) {
+            case 1:
+                caloriasPrato = 180;
+                break;
+            case 2:
+                caloriasPrato = 230;
+                break;
+            case 3:
+                caloriasPrato = 250;
+                break;
+            case 4:
+                caloriasPrato = 350;
+                break;
+        }
+
+        switch (sobremesa) {
+            case 1:
+                caloriasSobremesa = 75;
+                break;
+            case 2:
+                caloriasSobremesa = 110;
+                break;
+            case 3:
+                caloriasSobremesa = 170;
+                break;
+            case 4:
+                caloriasSobremesa = 200;
+                break;
+        }
+
+        switch (bebida) {
+            case 1:
+                caloriasBebida = 20;
+                break;
+            case 2:
+                caloriasBebida = 70;
+                break;
+            case 3:
+                caloriasBebida = 100;
+                break;
+            case 4:
+                caloriasBebida = 65;
+                break;
+        }
+
+        document.write("Calorias totais: " + (caloriasPrato + caloriasBebida + caloriasSobremesa))
+    }
         
 
     </script>

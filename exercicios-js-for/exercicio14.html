@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalo de numeros</title>
+</head>
+<body>
+    
+    <h1>Intervalo de numeros</h1>
+
+    <script>
+
+        let entre0E100 = 0
+        let entre101E200 = 0
+        let maior200 = 0
+
+        for(let i =1; i<=20; i++) {
+
+
+            let numero = parseFloat(prompt("digite o " + i + " numero"))
+            if (numero >= 0 && numero <=100) {
+
+                entre0E100 +=1
+
+            } else if (numero >= 101 && numero <= 200) {
+
+                entre101E200 +=1
+
+            } else if (numero > 200) {
+
+                maior200 += 1
+
+            }
+        }
+
+        document.write("Temos " + entre0E100 + " numeros entre 0 e 100" + "<br>")
+        document.write("Temos " + entre101E200 + " numeros entre 101 e 200" + "<br>")
+        document.write("Temos " + maior200 + " numeros maior que 200")
+
+
+    </script>
+
+</body>
+</html>

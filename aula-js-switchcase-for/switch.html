@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Testando switch-case com semaforo</h1>
+
+    <script>
+
+        let semaforo = prompt("Digite a cor do semaforo").toLocaleLowerCase()
+
+        switch (semaforo) {
+            case "vermelho":
+                alert("PARE!!")
+                break;
+            
+            case "amarelo":
+                alert("atenção")
+                break;
+            
+            case "verde":
+                alert("continue")
+                break;
+
+            default: alert("Valor invalido")
+        }
+
+    </script>
+
+</body>
+</html>

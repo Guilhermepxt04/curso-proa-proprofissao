@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares</title>
+</head>
+<body>
+    
+    <h1>Pares</h1>
+
+    <script>
+
+        let pares = 0
+
+        for(let i =1; i<=20; i++) {
+
+
+            let numero = parseFloat(prompt("digite o " + i + " numero"))
+            if (numero % 2 == 0) {
+
+                pares +=1
+
+            }
+        }
+
+        document.write("Temos " + pares + " numeros pares")
+
+    </script>
+
+</body>
+</html>
