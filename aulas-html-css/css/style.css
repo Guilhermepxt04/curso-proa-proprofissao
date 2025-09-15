@@ -1,0 +1,96 @@
+body{
+    font-size: 20px; /*Tamanho da fonte tem varias unidades de medida: px, pt, em, pcs, %, mm, cm*/
+    color: rgb(6, 94, 65);/*cor da fonte*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*tipo da fonte*/
+    background-color: rgb(230, 226, 222);
+    background-image: url(../img/San\ Joji.jpg);/*Para colocar imagem de fundo*/
+    background-repeat: no-repeat; /*Para as imagens não repetirem*/
+    background-position: center center;
+    background-attachment: fixed ; /*A imagem fica fixa enquanto o conteudo fica passando */
+    /*background-size: cover; preenche toda a tela com a imagem*/
+    }
+
+h1{
+    font-size: 18px;
+    color: darkolivegreen;
+    text-align: center; /*alinhamento da fonte*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+                
+    }
+
+h2{
+    font-size: 20px;
+    color: rgb(155, 21, 227);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(111, 165, 252);
+
+    }
+
+h3{
+    background-color: darkcyan;
+    font-size: 18px ;
+    width: 600px; /*atributo Largura*/ 
+    text-align: center;
+    color: crimson;
+    font-weight: normal; /*font-weight: normal, tira o negrito da fonte*/
+
+    }   
+
+.diferente{
+    font-size: 20px;
+    color: darkcyan;
+    width: 100%;
+    text-align: center; /*alinhamento da fonte*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: crimson;
+                
+        }
+
+img{
+    width: 250px; /*Largura*/
+    height: 230px;/*altura*/
+    }
+
+.pequeno {
+    width: 250px;
+    height: auto; /* mantém a proporção */
+        }
+
+.media {
+    width: 350px;
+    height: 330px;/* mantém a proporção */
+    border: 3px dashed skyblue; /* 3px pixel, dashed é o modo da borda e cor */
+        }
+
+.grande {
+    width: 450px;
+    height: 430px; /* mantém a proporção */
+        }
+
+h4,h5,h6{
+    font-size: 20px;
+    color: rgb(65, 128, 128);
+    width: 800px;
+    text-align: center; /*alinhamento da fonte*/
+    font-style: italic;
+    background-color: rgb(113, 6, 27); 
+        }
+
+h4{
+    background-color: darkslateblue ;
+    margin: auto; /*Se deslocar pela pagina, auto quer dizer automatico*/
+    border: 5px solid springgreen;
+    }
+
+h5{
+    margin-left: 250px;
+    /*margin-bottom: 0;*/
+                
+    }
+
+h6{
+    margin: 0;
+    }
+
