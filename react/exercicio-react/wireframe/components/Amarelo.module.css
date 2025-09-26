@@ -1,0 +1,12 @@
+.amarelo {
+
+    width: 100%;
+    height: 65%;
+    clear: left;
+    border: #f00 solid 7px;
+    background-color: #ff0;
+    text-align: center;
+    font-weight: bolder;
+    box-sizing: border-box;
+
+}
