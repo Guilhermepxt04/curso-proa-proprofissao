@@ -1,0 +1,8 @@
+.conteudo {
+    position: relative;
+    width: 80%;
+    height: 65vh;
+    background-color: #ccc;
+    float: left;
+    font-size: 30px;
+}

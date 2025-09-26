@@ -1,0 +1,6 @@
+.camera {
+    position: absolute;
+    top: 76%;
+    left: 80%;
+    z-index: 3;
+}

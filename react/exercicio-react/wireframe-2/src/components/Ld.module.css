@@ -1,0 +1,16 @@
+.ld {
+    position: relative;
+    width: 10%;
+    height: 65vh;
+    background-color: rgb(106, 161, 165);
+    float: left;
+}
+
+.branco {
+    position: relative;
+    width: 90%;
+    height: 15vh;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5px;
+}
