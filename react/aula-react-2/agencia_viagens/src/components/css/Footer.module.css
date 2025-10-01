@@ -1,0 +1,25 @@
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes_sociais{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.redes_sociais img {
+    width: 50px;
+}
+
+p {
+    font-weight: bold;
+}
