@@ -12,10 +12,10 @@ export default function Header() {
 
             <nav className={Style.menu}>
                 <a href="#">Home</a>
-                <a href="#">Escocia</a>
+                <a href="#escocia">Escocia</a>
                 <a href="#">Grand Canyon</a>
                 <a href="#">Muralhas da China</a>
-                <a href="#">Canada</a>
+                <a href="#">Aruba</a>
             </nav>
 
             <div className={Style.busca}>

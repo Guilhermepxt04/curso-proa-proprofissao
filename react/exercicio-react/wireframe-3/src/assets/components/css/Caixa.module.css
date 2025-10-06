@@ -1,0 +1,25 @@
+.caixa_rosa {
+    background-color: #BA8A8A;
+    width: 40%;
+    height: 80%;
+}
+
+.caixa_branca {
+    background-color: #fff;
+    width: 15%;
+    height: 80%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.caixa_azul {
+    background-color: #191973;
+    width: 40%;
+    height: 80%;
+}
+
+.caixa_verde {
+    background-color: #2FF5EE;
+    width: 40%;
+    height: 80%;
+}

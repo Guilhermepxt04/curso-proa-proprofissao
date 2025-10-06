@@ -1,0 +1,20 @@
+.fundo_gran {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/images/GrandCanyon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fundo_gran h1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    width: 45%;
+    padding: 10px;
+    text-align: center;
+}

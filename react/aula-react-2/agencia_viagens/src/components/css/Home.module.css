@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .mala {
@@ -14,7 +15,11 @@
 
 .conteudo{
     width: 45%;
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .conteudo h1 {

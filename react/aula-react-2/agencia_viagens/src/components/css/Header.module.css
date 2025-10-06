@@ -28,6 +28,11 @@ header{
     text-decoration: none;
     color: black;
     font-size: 20px;
+    transition: .5s all;
+}
+
+.menu a:hover{
+    color: blue;
 }
 
 .lupa {
