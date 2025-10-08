@@ -1,6 +1,5 @@
 * {
 
-    margin: 0;
     padding: 0;
     border: 0;
     position: relative;
@@ -10,10 +9,8 @@
 main {
 
     width: 90%;
-    height: 900px;
+    height: 98vh;
     margin: auto;
-    background-color: #ccc;
-    margin-top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
 
@@ -23,7 +20,7 @@ header {
 
     background-color: greenyellow;
     width: 100%;
-    height: 15%;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +29,7 @@ header {
 
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1022px) {
 
     header {
 
@@ -47,7 +44,7 @@ header {
 
 }
 
-section#lado_esquerdo {
+#lado_esquerdo {
 
     width: 30%;
     height: 70%;
@@ -55,7 +52,7 @@ section#lado_esquerdo {
     float: left;
 }
 
-section#lado_esquerdo nav {
+#lado_esquerdo nav {
 
     width: 80%;
     height: 45%;
@@ -63,7 +60,7 @@ section#lado_esquerdo nav {
     margin: auto;
 }
 
-section#lado_esquerdo aside {
+#lado_esquerdo aside {
 
     width: 80%;
     height: 45%;
@@ -72,7 +69,7 @@ section#lado_esquerdo aside {
     margin-top: 20px;
 }
 
-section#lado_direito {
+#lado_direito {
 
     width: 70%;
     height: 70%;
