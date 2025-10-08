@@ -1,56 +1,63 @@
-#fundo {
-
+* {
     position: relative;
-    width: 100%;
-    height: 100%;
-    font-weight: bolder
+    border: 0;
+    padding: 0;
+
+}
+
+main {
+
+    width: 99.5%;
+    height: 95vh;
+    margin: auto;
+
 }
 
 #topo {
 
-    position: relative;
+    display: flex;
     width: 100%;
-    height: 120px;
+    height: 14vh;
     background-color: #03c4ba;
     text-align: center;
-    font-size: 30px;
-    padding-top: 60px;
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 
 }
 
 
 #le {
 
-    position: relative;
     width: 10%;
-    height: 700px;
+    height: 80vh;
     background-color: rgb(106, 161, 165);
     float: left;
+    font-size: 40px;
 }
 
 #conteudo {
 
-    position: relative;
     width: 80%;
-    height: 700px;
+    height: 80vh;
     background-color: #ccc;
     float: left;
+    font-size: 40px;
 
 }
 
 #ld {
 
-    position: relative;
     width: 10%;
-    height: 700px;
+    height: 80vh;
     background-color: rgb(106, 161, 165);
     float: left;
 
 }
 
-#branco1 {
+.branco {
 
-    position: relative;
     width: 90%;
     height: 20%;
     background-color: #fff;
@@ -58,31 +65,23 @@
     margin-top: 5px;
 }
 
-#branco2 {
-
-    position: relative;
-    width: 90%;
-    height: 20%;
-    background-color: #fff;
-    margin: auto;
-    margin-top: 5px;
-}
 
 #rodape {
 
-    position: relative;
     width: 100%;
-    height: 50px;
+    height: 5vh;
     background-color: rgb(78, 167, 240);
     clear: left;
+    font-size: 30px;
 
 }
 
 #absoluto {
 
     position: absolute;
-    top: 76%;
-    left: 80%;
+    top: 70%;
+    left: 75%;
+    width: 10%;
 
 }
 
