@@ -10,8 +10,9 @@
 main {
 
     width: 90%;
-    height: 90%;
+    height: 99vh;
     margin: auto;
+    margin-top: 10px;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -21,7 +22,7 @@ main {
 header {
 
     width: 100%;
-    height: 100px;
+    height: 10vh;
     background-color: #000;
     color: #fff;
     display: flex;
@@ -144,7 +145,7 @@ nav#topo a:hover {
 
     background-color: #999999;
     width: 20%;
-    height: 650px;
+    height: 75vh;
     float: left;
     display: flex;
     flex-direction: column;
@@ -164,12 +165,6 @@ nav#topo a:hover {
 
 }
 
-@media (max-width: 514px) {
-
-
-
-}
-
 #nav_esquerda a:hover {
 
     background-color: #000;
@@ -182,13 +177,13 @@ section {
     color: #000;
     background: #fff;
     width: 60%;
-    height: 650px;
+    height: 75vh;
     float: left;
     margin-bottom: 10px;
 
 }
 
-section div#tablet {
+#tablet {
 
     width: 90%;
     margin: auto;
@@ -197,7 +192,7 @@ section div#tablet {
 
 }
 
-section div#tablet img {
+#tablet img {
 
     width: 100%;
     height: 100%;
@@ -295,7 +290,7 @@ section p {
 aside {
 
     width: 20%;
-    height: 660px;
+    height: 76vh;
     float: left;
 
 }
