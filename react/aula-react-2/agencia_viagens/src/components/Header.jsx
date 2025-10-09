@@ -11,11 +11,11 @@ export default function Header() {
             <img src={Logo} className={Style.logo}  alt="logo" />
 
             <nav className={Style.menu}>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
                 <a href="#escocia">Escocia</a>
-                <a href="#">Grand Canyon</a>
-                <a href="#">Muralhas da China</a>
-                <a href="#">Aruba</a>
+                <a href="#gran">Grand Canyon</a>
+                <a href="#china">Muralhas da China</a>
+                <a href="#aruba">Aruba</a>
             </nav>
 
             <div className={Style.busca}>

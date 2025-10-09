@@ -5,7 +5,7 @@ import Img from '../assets/images/mala-marrom.png'
 export default function Home() {
     return(
 
-        <section className={Style.fundo_home}>
+        <section id="home" className={Style.fundo_home}>
             <img src={Img} className={Style.mala} alt="mala de viagens" />
 
             <div className={Style.conteudo}>

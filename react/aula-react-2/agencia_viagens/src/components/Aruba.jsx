@@ -6,7 +6,7 @@ import bandeiraAruba from "../assets/images/bandeira-aruba.png"
 export default function Escocia() {
     return(
 
-        <section className={Style.fundo_aruba}>
+        <section id="aruba" className={Style.fundo_aruba}>
                 <h1>Venha conhecer a Aruba!</h1>
                 <ComponenteProps 
                 lugar="aruba"

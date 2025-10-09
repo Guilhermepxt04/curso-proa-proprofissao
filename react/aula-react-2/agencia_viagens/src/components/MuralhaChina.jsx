@@ -6,7 +6,7 @@ import bandeiraChina from "../assets/images/bandeira-china.png"
 export default function Escocia() {
     return(
 
-        <section className={Style.fundo_muralha}>
+        <section id="china" className={Style.fundo_muralha}>
                 <h1>Venha conhecer a Muralha da China!</h1>
                 <ComponenteProps 
                 lugar="Muralha da China"

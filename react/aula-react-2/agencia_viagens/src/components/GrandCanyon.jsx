@@ -6,7 +6,7 @@ import bandeiraEUA from '../assets/images/bandeira-eua.jpg'
 export default function Escocia() {
     return(
 
-        <section className={Style.fundo_gran}>
+        <section id="gran" className={Style.fundo_gran}>
                 <h1>Venha conhecer o Gran Canyon!</h1>
                 <ComponenteProps 
                 lugar="Grand Canyon"
