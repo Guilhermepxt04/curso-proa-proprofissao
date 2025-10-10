@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import React from "react";
 import Style from "./css/Header.module.css"
 import Lupa from "../assets/images/lupa.png"
@@ -11,11 +12,11 @@ export default function Header() {
             <img src={Logo} className={Style.logo}  alt="logo" />
 
             <nav className={Style.menu}>
-                <a href="#home">Home</a>
-                <a href="#escocia">Escocia</a>
-                <a href="#gran">Grand Canyon</a>
-                <a href="#china">Muralhas da China</a>
-                <a href="#aruba">Aruba</a>
+                <Link to="/">Home</Link>
+                <Link to="/Escocia">Escocia</Link>
+                <Link to="/GrandCanyon">Grand Canyon</Link>
+                <Link to="/MuralhaChina">Muralhas da China</Link>
+                <Link to="/Aruba">Aruba</Link>
             </nav>
 
             <div className={Style.busca}>
