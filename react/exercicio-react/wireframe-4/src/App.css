@@ -1,0 +1,20 @@
+.conteudo {
+    background-color: #BA8A8A;
+    padding: 40px 30px 80px;
+    color: #FFf;
+    font-size: 25px;
+    width: 50%;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    
+    .conteudo {
+        width: 100%;
+    }
+}

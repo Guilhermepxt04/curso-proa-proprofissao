@@ -1,0 +1,37 @@
+.endereco_style {
+    display: flex;
+    background-color: #BA5511;
+    padding: 60px;
+    gap: 50px;
+    margin-bottom: 10px;
+
+    & h2 {
+        margin-bottom: 100px;
+    }
+
+    & iframe {
+        width: 50%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .endereco_style {
+        flex-direction: column;
+        align-items: center;
+
+        & iframe {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .endereco_style {
+        padding: 10px;
+    }
+}

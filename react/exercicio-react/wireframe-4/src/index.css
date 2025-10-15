@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(assets/img/guitarra_fundo_body.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    margin: auto;
+    width: 95%;
+    background-color: #661514;
+}
