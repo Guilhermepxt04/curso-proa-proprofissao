@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,17 +21,17 @@
         } else if (saldoMedio >= 501 && saldoMedio <= 1000){
 
             document.write("Saldo Medio: " + saldoMedio + "<br>");
-            document.write("30% de credito disponivel: " + (saldoMedio / 100 * 30));
+            document.write("30% de credito disponivel: " + (saldoMedio / 100 * 30).toFixed(2));
 
         } else if (saldoMedio >= 1001 && saldoMedio <= 3000){
 
             document.write("Saldo Medio: " + saldoMedio + "<br>");
-            document.write("40% de credito disponivel: " + (saldoMedio / 100 * 40));
+            document.write("40% de credito disponivel: " + (saldoMedio / 100 * 40).toFixed(2));
 
         } else if (saldoMedio >= 3001){
 
             document.write("Saldo Medio: " + saldoMedio + "<br>");
-            document.write("50% de credito disponivel: " + (saldoMedio / 100 * 50));
+            document.write("50% de credito disponivel: " + (saldoMedio / 100 * 50).toFixed(2));
 
         };
 
