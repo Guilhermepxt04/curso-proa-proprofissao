@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de idade de N pessoas</title>
+</head>
+
+<body>
+
+    <h1>Media de idade de N pessoas</h1>
+
+    <button onclick="media()">Ativar</button>
+    <p></p>
+    <div id="resultado"></div>
+
+    <Script>
+        function media() {
+            let soma = 0;
+            let i = 0;
+            let nome = "";
+
+            while (true) {
+                nome = prompt("Digite o nome (digite 'fim' para parar): ").toLowerCase();
+                if (nome == "fim") {
+                    break;
+                }
+                let numero = parseInt(prompt("Digite a idade dessa pessoa: "));
+                soma += numero;
+                i++;
+            }
+            let media = soma / i;
+
+            document.querySelector("#resultado").innerHTML = "a media das idades é: " + media.toFixed(2);
+        }
+    </Script>
+
+</body>
+
+</html>

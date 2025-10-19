@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada com do while</title>
+</head>
+
+<body>
+
+    <h1>tabuada com do while</h1>
+
+    <button onclick="tabuada()">Ativar</button>
+
+    <script>
+        function tabuada() {
+
+            let i = 1;
+            let numero = parseInt(prompt("Digite o numero para ver sua tabuada até o 10"));
+
+            do {
+                document.write(numero + " x " + i + " = " + (numero * i) + "<br>");
+                i ++;
+            } while (i <= 10)
+
+        }
+    </script>
+
+</body>
+
+</html>

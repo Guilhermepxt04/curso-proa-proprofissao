@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impares de 1 a 50 com do while</title>
+</head>
+<body>
+    
+    <h1>Impares de 1 a 50 com do while</h1>
+
+    <button onclick="impares()">Ativar</button>
+
+    <script>
+        function impares() {
+
+            let i = 1;
+            
+            do {
+                if (i % 2 == 1) {
+                    document.write(i + "<br>")
+                }
+                i++;
+            } while (i <= 50)
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci até o input com for</title>
+</head>
+
+<body>
+
+    <h1>Fibonacci até o input com for</h1>
+
+    <button onclick="fibonacci()">Ativar</button>
+
+    <script>
+        function fibonacci() {
+
+            
+            let numero = parseInt(prompt("Digite um numero: "));
+            let fibo1 = 1;
+            let fiboSoma = fibo1 + 1;
+            let fibotemp = fiboSoma;
+
+            document.write("1, 1 ");
+
+            for (; fiboSoma <=numero; ) {
+                document.write(", " + fiboSoma)
+                fiboSoma = fibo1 + fibotemp
+                fibo1 = fibotemp
+                fibotemp = fiboSoma
+            }
+
+            document.write(".")
+        }
+    </script>
+
+</body>
+
+</html>
