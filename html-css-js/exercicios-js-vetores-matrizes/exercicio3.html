@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do triangulo</title>
+</head>
+<body>
+    
+    <h1>Area do triangulo</h1>
+
+    <button onclick="area()">Ativar</button>
+    <p></p>
+    <div class="area"></div>
+
+    <script>
+        function area() {
+            
+            let base = parseFloat(prompt("Digite a base do triangulo"));
+            let altura = parseFloat(prompt("Digite a altura do triangulo"));
+
+            let area = base * altura / 2;
+
+            document.querySelector(".area").innerHTML = "area = " + area.toFixed(2);
+
+
+        }
+    </script>
+
+</body>
+</html>

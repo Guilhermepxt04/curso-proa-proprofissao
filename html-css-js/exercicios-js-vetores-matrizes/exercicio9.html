@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montante</title>
+</head>
+<body>
+
+    <h1>Montante</h1>
+
+    <button onclick="calcular()">Ativar</button>
+    <p></p>
+    <div class="resultado"></div>
+
+    <script>
+        function calcular() {
+
+            let depositoMensal = parseFloat(prompt("Digite o valor do deposito mensal"));
+            let juros = parseFloat(prompt("Digite a taxa de juros mensal"));
+
+            let montante = 0;
+
+            for(let i = 1; i<=12; i++) {
+                montante += depositoMensal;
+                montante += (montante / 100) * juros
+            };
+
+            document.querySelector(".resultado").innerHTML = "valor após 12 meses: R$" + montante.toFixed(2);
+
+        }
+    </script>
+    
+</body>
+</html>

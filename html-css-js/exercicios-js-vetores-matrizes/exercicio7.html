@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario com comissão</title>
+</head>
+<body>
+
+    <h1>Salario com comissão</h1>
+
+    <button onclick="salario()">Ativar</button>
+    <p></p>
+    <div class="resultado"></div>
+
+    <script>
+        function salario() {
+
+            let salarioBase = parseFloat(prompt("Digite o salario base do funcionario: "));
+
+            let salarioLiquido = salarioBase + (salarioBase / 100) * 5;
+
+            document.querySelector(".resultado").innerHTML = "O salario do funcionario com a comissão de 5% = R$" + salarioLiquido.toFixed(2);
+
+        }
+    </script>
+    
+</body>
+</html>

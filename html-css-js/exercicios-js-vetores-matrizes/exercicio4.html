@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media ponderada</title>
+</head>
+
+<body>
+
+    <h1>Media ponderada</h1>
+
+    <button onclick="media()">Ativar</button>
+    <p></p>
+    <div class="resultado"></div>
+
+    <script>
+
+        function obterNota(texto) {
+            let nota
+            do {
+                nota = parseInt(prompt(texto));
+            } while (nota < 0 || nota > 10);
+            return nota
+        }
+
+        function media() {
+            const PESO_1 = 2;
+            const PESO_2 = 3;
+            const PESO_3 = 5;
+
+            let nota1 = obterNota("Digite a primeira nota de 1 a 10")
+            let nota2 = obterNota("Digite a segunda nota de 1 a 10")
+            let nota3 = obterNota("Digite a terceira nota de 1 a 10")
+
+            let media = ((nota1 * PESO_1) + (nota2 * PESO_2) + (nota3 * PESO_3)) / (PESO_1 + PESO_2 + PESO_3);
+
+            document.querySelector(".resultado").innerHTML = "media do aluno = " + media.toFixed(2);
+        }
+
+    </script>
+
+</body>
+
+</html>

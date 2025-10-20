@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações com 2 numeros</title>
+</head>
+<body>
+    
+    <h1>Operações com 2 numeros</h1>
+
+    <button onclick="operacoes()">Ativar</button>
+    <p></p>
+    <div class="soma"></div>
+    <div class="sub"></div>
+    <div class="mult"></div>
+    <div class="divisao"></div>
+
+    <script>
+        function operacoes() {
+
+            let numero1 = parseInt(prompt("Digite um numero"));
+            let numero2 = parseInt(prompt("Digite um segundo numero"));
+
+            let soma = numero1 + numero2;
+            let sub = numero1 - numero2;
+            let mult = numero1 * numero2;
+            let div = numero1 / numero2;
+
+            document.querySelector(".soma").innerHTML = "soma = " + soma;
+            document.querySelector(".sub").innerHTML = "subtração = " + sub;
+            document.querySelector(".mult").innerHTML = "multiplicação = " +mult;
+            document.querySelector(".divisao").innerHTML = "divisão = " + div;
+
+
+        }
+    </script>
+
+</body>
+</html>

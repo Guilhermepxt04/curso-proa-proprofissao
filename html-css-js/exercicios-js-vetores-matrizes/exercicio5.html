@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto com quantidade</title>
+</head>
+<body>
+    
+    <h1>Desconto com quantidade</h1>
+
+    <button onclick="desconto()">Ativar</button>
+    <p></p>
+    <div class="valor"></div>
+
+    <script>
+        function desconto() {
+
+            let preco = parseFloat(prompt("digite o preço do item"));
+            let quantidade = parseInt(prompt("Digite a quantidade de itens"));
+
+            if (quantidade > 10) {
+                preco = (preco * quantidade) - ((preco * quantidade) / 100) * 10;
+                document.querySelector(".valor").innerHTML = "Valor do produto com desconto = " + preco;
+            } else {
+                document.querySelector(".valor").innerHTML = "sem desconto disponivel. Valor total = " + preco * quantidade;
+            }
+
+            
+
+        }
+    </script>
+
+</body>
+</html>

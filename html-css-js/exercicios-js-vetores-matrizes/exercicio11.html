@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de 3 numeros</title>
+</head>
+<body>
+    
+    <h1>Media de 3 numeros</h1>
+
+    <button onclick="media()">Ativar</button>
+    <p></p>
+    <div class="resultado"></div>
+
+    <Script>
+        function media() {
+            let soma = 0;
+
+
+            for (let i = 1;i <=3; i++) {
+                let numero = parseFloat(prompt("Digite um numero inteiro positivo"));
+                soma += numero;
+            }
+            let media = soma / 3;
+
+            document.querySelector(".resultado").innerHTML = "a média dos 3 números é: " + media.toFixed(2);
+        }
+    </Script>
+
+</body>
+</html>
