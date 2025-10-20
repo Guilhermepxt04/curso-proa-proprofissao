@@ -61,6 +61,7 @@ header {
     flex-direction: row;
     padding: 300px 40px;
     gap: 50px;
+    flex-wrap: wrap;
 
 
     & .textos {
@@ -150,5 +151,36 @@ header {
             margin: auto;
             width: 80%;
         }
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    header nav {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header .botoes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #hero {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #hero .textos h1 {
+        font-size: 2.8rem;
     }
 }
