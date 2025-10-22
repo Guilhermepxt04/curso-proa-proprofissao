@@ -19,10 +19,9 @@
         function media() {
             let soma = 0;
             let i = 0;
-            let nome = "";
 
-            while (true) {
-                nome = prompt("Digite o nome (digite 'fim' para parar): ").toLowerCase();
+            for ( ; ; ) {
+                let nome = prompt("Digite o nome (digite 'fim' para parar): ").toLowerCase();
                 if (nome == "fim") {
                     break;
                 }
