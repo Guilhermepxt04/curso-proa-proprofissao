@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz 3x3 simétrica</title>
+</head>
+
+<body>
+
+    <h1>Matriz 3x3 simétrica</h1>
+    <button onclick="CompararMatriz()">Ativar</button>
+
+    <script>
+        function CompararMatriz() {
+
+            let matriz = [[], [], []]
+
+            for (let i = 0; i <= 2; i++) {
+                for (let j = 0; j <= 2; j++) {
+                    let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " " + (j + 1)));
+
+                    matriz[i].push(numero)
+                }
+            }
+
+            let simetrica = true;
+
+            for (let i = 0; i <= 2; i++) {
+                for (let j = i + 1; j <= 2; j++) {
+                    if (matriz[i][j] !== matriz[j][i]) {
+                        simetrica = false; 
+                        break; 
+                    }
+                }
+                if (!simetrica) {
+                    break;
+                }
+            }
+
+            matriz.forEach(linhas => {
+                document.write(linhas + "<br>")
+            })
+
+            if (simetrica) {
+                document.write("A matriz é simetrica")
+            } else {
+                document.write("A matriz não é simetrica")
+            };
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>

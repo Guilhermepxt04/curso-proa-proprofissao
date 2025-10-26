@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros 20 numeros de Fibonnaci</title>
+</head>
+
+<body>
+
+    <h1>Primeiros 20 numeros de Fibonnaci</h1>
+
+    <button onclick="fibonacci()">Ativar</button>
+    <p></p>
+    <div id="resultado"></div>
+
+    <script>
+        function fibonacci() {
+
+            let i = 1;
+            let fibo1 = 1;
+            let fiboSoma = fibo1 + 1;
+            let fibotemp = fiboSoma;
+
+            document.write("1, 1");
+
+            while (i <= 18) {
+                document.write(", " + fiboSoma);
+                fiboSoma = fibo1 + fibotemp;
+                fibo1 = fibotemp;
+                fibotemp = fiboSoma;
+                i ++;
+            }
+
+            document.write(".");
+        }
+    </script>
+
+</body>
+
+</html>

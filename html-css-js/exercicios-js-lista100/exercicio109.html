@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Identidade 3x3</title>
+</head>
+
+<body>
+
+    <h1>Matriz Identidade 3x3</h1>
+    <button onclick="Matriz()">Ativar</button>
+
+    <script>
+        function Matriz() {
+
+            let matriz = [[], [], []]
+            let identidade = true;
+
+            for (let i = 0; i <= 2; i++) {
+                for (let j = 0; j <= 2; j++) {
+                    let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " " + (j + 1)));
+
+                    matriz[i].push(numero);
+
+                    if (i == j) {
+                        if (numero != 1) {
+                            identidade = false;
+                        }
+                    } else {
+                        if (numero != 0) {
+                            identidade = false;
+                        }
+                    }
+                }
+            }
+
+            matriz.forEach(linhas => {
+                document.write(linhas + "<br>")
+            })
+
+            if (identidade) {
+                document.write("É uma matriz identidade");
+            } else {
+                document.write("Não é uma matriz identidade")
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

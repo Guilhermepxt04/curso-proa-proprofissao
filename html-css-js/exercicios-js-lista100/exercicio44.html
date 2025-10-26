@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de idade de 5 pessoas</title>
+</head>
+<body>
+    
+    <h1>Media de idade de 5 pessoas</h1>
+
+    <button onclick="media()">Ativar</button>
+    <p></p>
+    <div id="resultado"></div>
+
+    
+
+    <Script>
+        function media() {
+            let soma = 0;
+            let i = 1;
+
+            while (i <=5) {
+                let nome = prompt("Digite o nome: ")
+                let numero = parseInt(prompt("Digite a idade dessa pessoa "));
+                soma += numero;
+                i ++;
+            }
+            let media = soma / 5;
+
+            document.querySelector("#resultado").innerHTML = "a media das 5 idades é: " + media.toFixed(2);
+        }
+    </Script>
+
+</body>
+</html>

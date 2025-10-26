@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior em cada linha da Matriz 4x4</title>
+</head>
+<body>
+    
+    <h1>Maior em cada linha da Matriz 4x4</h1>
+    <button onclick="MaiorLinhaMatriz()">Ativar</button>
+
+    <script>
+        function MaiorLinhaMatriz() {
+            
+            let matriz = [[], [], [], []]
+            let maior = [0, 0, 0, 0];
+
+            for (let i = 0; i<=3; i++) {
+                for (let j = 0; j<=3; j++) {
+                    let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " "+ (j + 1)));
+
+                    matriz[i].push(numero)
+
+                    if (numero > maior[i]) {
+                        maior[i] = numero
+                    }
+            }
+            }
+
+            matriz.forEach(linhas => {
+                document.write(linhas + "<br>")
+            })
+
+            maior.forEach(n => {
+                document.write("Maior numero = " + n + "<br>")
+            })
+
+        }
+    </script>
+
+</body>
+</html>

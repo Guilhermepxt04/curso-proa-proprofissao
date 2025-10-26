@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes em ordem alfabetica</title>
+</head>
+<body>
+
+    <h1>Nomes em ordem alfabetica</h1>
+    <button onclick="OrdemAlfabetica()">Ativar</button>
+    <p></p>
+    <div class="lista"></div>
+    <div class="resultado"></div>
+
+    <script>
+        function OrdemAlfabetica() {
+            let array = []
+
+            for(let i = 1; i<=5; i++) {
+
+                let nome = prompt("Digite o " + i + " nome");
+
+                array.push(nome);
+            }
+
+            document.querySelector(".lista").innerHTML = "lista de nomes digitados em ordem alfabetica = " + array.sort();
+        }
+    </script>
+    
+</body>
+</html>

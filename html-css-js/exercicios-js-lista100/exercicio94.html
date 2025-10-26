@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array de pares</title>
+</head>
+<body>
+
+    <h1>Array de pares</h1>
+    <button onclick="Media()">Ativar</button>
+    <p></p>
+    <div class="lista-par"></div>
+
+    <script>
+        function Media() {
+            let arrayPar = []
+
+            for(let i = 1; i<=7; i++) {
+
+                let numero = parseInt(prompt("Digite o " + i + " numero"));
+
+                if (numero % 2 == 0) {
+                    arrayPar.push(numero);
+                }
+            }
+
+            document.querySelector(".lista-par").innerHTML = "numeros pares digitados = " + arrayPar;
+        }
+    </script>
+    
+</body>
+</html>

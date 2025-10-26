@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial com do while</title>
+</head>
+
+<body>
+
+    <h1>Fatorial com do while</h1>
+
+    <button onclick="fatorial()">Ativar</button>
+    <p></p>
+    <div id="resultado"></div>
+
+    <script>
+        function fatorial() {
+
+            let numero = parseInt(prompt("Digite um numero"));
+            if (numero == 0) {
+                document.querySelector("#resultado").innerHTML = "o fatorial do numero 0 é 1"
+            } else {
+                let i = numero - 1;
+                let resultado = numero * i;
+                let temp = resultado;
+                if (numero != 2) {
+                    i--;
+                }
+
+                do {
+                    resultado = temp * i;
+                    temp = resultado;
+                    i--;
+                } while (i >= 1)
+
+
+                document.querySelector("#resultado").innerHTML = "o fatorial do numero " + numero + " é " + resultado
+            }
+        }
+    </script>
+
+</body>
+
+</html>

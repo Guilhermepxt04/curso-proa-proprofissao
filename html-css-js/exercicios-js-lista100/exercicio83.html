@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de 7 numeros</title>
+</head>
+<body>
+
+    <h1>Media de 7 numeros</h1>
+    <button onclick="Media()">Ativar</button>
+    <p></p>
+    <div class="lista"></div>
+    <div class="resultado"></div>
+
+    <script>
+        function Media() {
+            let array = []
+            let soma = 0
+
+            for(let i = 1; i<=7; i++) {
+
+                let numero = parseInt(prompt("Digite o " + i + " numero"));
+
+                array.push(numero);
+
+                soma += numero;
+
+            }
+
+            let media = soma / 7;
+
+            document.querySelector(".lista").innerHTML = "lista de numeros digitados = " + array;
+            document.querySelector(".resultado").innerHTML = "resultado da media deles = " + media.toFixed(2);
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma positivos e negativos</title>
+</head>
+<body>
+
+    <h1>Soma de positivos e negativos</h1>
+    <button onclick="Quantidade()">Ativar</button>
+    <p></p>
+    <div class="lista-positivos"></div>
+    <div class="lista-negativos"></div>
+
+    <script>
+        function Quantidade() {
+            let arrayPositivos = [];
+            let arrayNegativos = [];
+            let somaPositivo = 0;
+            let somaNegativo = 0;
+
+            for(let i = 1; i<=10; i++) {
+
+                let numero = parseInt(prompt("Digite o " + i + " numero"));
+
+                if (numero > 0) {
+                    arrayPositivos.push(numero);
+                    somaPositivo += numero;
+                } else {
+                    arrayNegativos.push(numero);
+                    somaNegativo += numero;
+                }
+            }
+
+            document.querySelector(".lista-positivos").innerHTML = "soma dos valores postivos digitados = " + somaPositivo;
+            document.querySelector(".lista-negativos").innerHTML = "soma dos valores negativos digitados = " + somaNegativo;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos meses e dias</title>
+</head>
+<body>
+    
+    <h1>Anos Meses e Dias</h1>
+
+    <script>
+
+        let ano = parseInt(prompt("Quantos anos você tem?: "))
+        let meses = parseInt(prompt("Quantos meses você tem?: "))
+        let dias = parseInt(prompt("Quantos dias você tem?: "))
+
+        let totalDias = (ano * 365) + (meses * 30) + dias
+
+        document.write("Aproximadamente você tem " + totalDias + " dias de vida no total")
+
+    </script>
+
+</body>
+</html>

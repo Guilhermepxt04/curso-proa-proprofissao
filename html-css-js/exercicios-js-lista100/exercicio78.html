@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterar pelos digitos de um numero com for</title>
+</head>
+<body>
+    <h1>Iterar pelos digitos de um numero com for</h1>
+
+    <button onclick="digitos()">Ativar</button>
+
+
+    <script>
+        function digitos() {
+
+
+            let numero = parseInt(prompt("Digite um numero inteiro"))
+            numero = numero.toString();
+            for(let i = 0; i<numero.length; i++) {
+                document.write(numero[i] + " ");
+            }
+        }
+    </script>
+
+</body>
+</html>

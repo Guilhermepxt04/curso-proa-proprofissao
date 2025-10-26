@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de inputs invertidos</title>
+</head>
+<body>
+
+    <h1>Lista de inputs invertidos</h1>
+    <button onclick="Lista()">Ativar</button>
+    <p></p>
+    <div class="lista"></div>
+
+    <script>
+        function Lista() {
+
+            let array = [];
+
+            for (let i = 1; i<=5; i++) {
+
+                let numero = parseInt(prompt("Digite o " + i + " numero"))
+                array.push(numero)
+            }
+
+            let reverse =  array.reverse()
+            document.querySelector(".lista").innerHTML = "lista inverta = " + reverse;
+        }
+    </script>
+    
+</body>
+</html>

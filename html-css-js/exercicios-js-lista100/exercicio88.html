@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de pares e impares</title>
+</head>
+<body>
+
+    <h1>Media de pares e impares</h1>
+    <button onclick="Media()">Ativar</button>
+    <p></p>
+    <div class="lista-par"></div>
+    <div class="lista-impar"></div>
+
+    <script>
+        function Media() {
+            let arrayPar = []
+            let arrayImpar = []
+            let somaPar = 0
+            let somaImpar = 0
+
+            for(let i = 1; i<=5; i++) {
+
+                let numero = parseInt(prompt("Digite o " + i + " numero"));
+
+                if (numero % 2 == 0) {
+                    arrayPar.push(numero);
+                    somaPar += numero
+                } else {
+                    arrayImpar.push(numero);
+                    somaImpar += numero
+                }
+            }
+
+            let mediaPar = somaPar / arrayPar.length;
+            let mediaImpar = somaImpar / arrayImpar.length;
+
+
+            document.querySelector(".lista-par").innerHTML = "media de numeros pares digitados = " + mediaPar;
+            document.querySelector(".lista-impar").innerHTML = "media de numeros impares digitados = " + mediaImpar;
+            
+
+        }
+    </script>
+    
+</body>
+</html>

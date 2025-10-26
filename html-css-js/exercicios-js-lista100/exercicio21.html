@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de pessoas</title>
+</head>
+<body>
+    
+    <h1>Grupo de Pessoas</h1>
+
+    <script>
+
+        let quantidade = parseInt(prompt("Quantas idades você vai digitar?: "));
+        let maiorIdade = 0
+        let menorIdade = 0
+
+        for (i = 0; i < quantidade ; i++) {
+
+            let idade = parseInt(prompt("Digite a idade: "))
+
+            if (idade < 18) {
+                menorIdade += 1
+            } else {
+                maiorIdade +=1
+            }
+
+        }  
+        
+        document.write("Temos " + menorIdade + " pessoas menores de idade e " + maiorIdade + " pessoas maiores de idade")
+
+    </script>
+
+</body>
+</html>

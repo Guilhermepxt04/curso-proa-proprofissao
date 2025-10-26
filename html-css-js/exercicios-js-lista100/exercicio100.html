@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior em uma Matriz 3x3</title>
+</head>
+<body>
+    
+    <h1>Maior em uma Matriz 3x3</h1>
+    <button onclick="MaiorMatriz()">Ativar</button>
+
+    <script>
+        function MaiorMatriz() {
+            
+            let matriz = [[], [], []]
+            let maior = 0;
+
+            for (let i = 0; i<=2; i++) {
+                for (let j = 0; j<=2; j++) {
+                    let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " "+ (j + 1)));
+
+                    matriz[i].push(numero)
+
+                    if (numero > maior) {
+                        maior = numero
+                    }
+            }
+            }
+
+            matriz.forEach(linhas => {
+                document.write(linhas + "<br>")
+            })
+
+            document.write("Maior numero da matriz = " + maior)
+
+        }
+    </script>
+
+</body>
+</html>

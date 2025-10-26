@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma 2 matrizes 2x2</title>
+</head>
+
+<body>
+
+    <h1>Soma 2 matrizes 2x2</h1>
+    <button onclick="SomaMatrizes()">Ativar</button>
+
+    <script>
+        function SomaMatrizes() {
+
+            let matrizes = [
+                [[], []],
+                [[], []]
+            ];
+            let somas = [0, 0];
+
+            for (let m = 0; m <= 1; m++) {
+                alert("Digite os valores da Matriz " + (m + 1));
+                for (let i = 0; i <= 1; i++) {
+                    for (let j = 0; j <= 1; j++) {
+                        let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " " + (j + 1)));
+
+                        somas[m] += numero
+
+                        matrizes[m][i].push(numero)
+                    }
+                }
+            }
+
+            matrizes[0].forEach(linhas => {
+                document.write(linhas + "<br>")
+            });
+
+            document.write(" -------------- " + "<br>");
+
+            matrizes[1].forEach(linhas => {
+                document.write(linhas + "<br>")
+            });
+
+            document.write("Soma de todos elementos = " + (somas[0] + somas[1]));
+
+        }
+    </script>
+
+</body>
+
+</html>

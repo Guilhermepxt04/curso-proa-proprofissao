@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aposentadoria</title>
+</head>
+<body>
+    
+    <h1>Aposentadoria</h1>
+
+    <script>
+
+        let idade = parseInt(prompt("Digite sua idade: "))
+        let sexo = prompt("Digite seu sexo (M / F): ").toLowerCase()
+
+        switch (sexo) {
+
+            case 'm':
+                if (idade >= 65) {
+                    document.write("Você pode aposentar")
+                } else {
+                    document.write("Você ainda não pode aposentar")
+                }
+                break;
+            case 'f':
+                if (idade >= 60) {
+                    document.write("Você pode aposentar")
+                } else {
+                    document.write("Você ainda não pode aposentar")
+                }
+                break;
+            }
+
+
+    </script>
+
+</body>
+</html>

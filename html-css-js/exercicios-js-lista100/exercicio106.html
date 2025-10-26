@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar 2 matrizes 2x2</title>
+</head>
+
+<body>
+
+    <h1>Comparar 2 matrizes 2x2</h1>
+    <button onclick="CompararMatrizes()">Ativar</button>
+
+    <script>
+        function CompararMatrizes() {
+
+            let matrizes = [
+                [[], []],
+                [[], []]
+            ];
+
+            for (let m = 0; m <= 1; m++) {
+                alert("Digite os valores da Matriz " + (m + 1));
+                for (let i = 0; i <= 1; i++) {
+                    for (let j = 0; j <= 1; j++) {
+                        let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " " + (j + 1)));
+
+                        matrizes[m][i].push(numero);
+                    }
+                }
+            }
+
+            matrizes[0].forEach(linhas => {
+                document.write(linhas + "<br>")
+            });
+
+            document.write(" -------------- " + "<br>");
+
+            matrizes[1].forEach(linhas => {
+                document.write(linhas + "<br>")
+            });
+
+            let saoIguais = true; 
+
+            for (let i = 0; i <= 1; i++) { 
+                for (let j = 0; j <= 1; j++) {
+
+                    if (matrizes[0][i][j] !== matrizes[1][i][j]) {
+                        saoIguais = false; 
+                        break;
+                    }
+                }
+                if (!saoIguais) {
+                    break;
+                }
+            }
+
+            if (saoIguais) {
+                document.write("As matrizes são iguais");
+            } else {
+                document.write("As matrizes são diferentes");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço das maças</title>
+</head>
+<body>
+    
+    <h1>Preço das maças</h1>
+
+    <script>
+
+        let quantidade = parseInt(prompt("Digite o numero de maças: "))
+        let total = 0
+
+        if (quantidade < 12) {
+
+            total = 0.50 * quantidade
+
+        } else {
+
+            total = 0.40 * quantidade
+
+        }
+
+        document.write("O preço total da compra das suas maças é R$" + total.toFixed(2))
+
+    </script>
+
+</body>
+</html>

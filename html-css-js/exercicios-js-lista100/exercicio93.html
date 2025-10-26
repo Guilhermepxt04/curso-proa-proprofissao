@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores entre 10 e 50</title>
+</head>
+<body>
+
+    <h1>Valores entre 10 e 50</h1>
+    <button onclick="Valores()">Ativar</button>
+    <p></p>
+    <div class="lista"></div>
+    <div class="resultado"></div>
+    <div class="intervalo"></div>
+
+    <script>
+        function Valores() {
+            let array = [];
+            let intervaloValores = [];
+            let contador = 0
+
+            for(let i = 1; i<=10; i++) {
+
+                let numero = parseInt(prompt("Digite o " + i + " numero"));
+
+                array.push(numero);
+            }
+
+            array.forEach(n => {
+                if (n > 10 && n <50) {
+                    contador += 1;
+                    intervaloValores.push(n)
+                }
+            });
+
+            document.querySelector(".lista").innerHTML = "lista de numeros digitados = " + array;
+            document.querySelector(".resultado").innerHTML = "quantidade de numeros entre 10 e 50 = " + contador;
+            document.querySelector(".intervalo").innerHTML = "lista dos numeros dentro do intervalo = " + intervaloValores;
+
+        }
+    </script>
+    
+</body>
+</html>

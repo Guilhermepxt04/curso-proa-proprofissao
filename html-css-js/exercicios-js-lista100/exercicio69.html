@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de 5 numeros com for</title>
+</head>
+<body>
+    
+    <h1>Media de 5 numeros com for</h1>
+
+    <button onclick="media()">Ativar</button>
+    <p></p>
+    <div id="resultado"></div>
+
+    <Script>
+        function media() {
+            let soma = 0;
+            for (let i = 1; i<=5; i++) {
+                let numero = parseInt(prompt("Digite um numero inteiro positivo"));
+                soma += numero;
+            }
+            let media = soma / 5
+
+            document.querySelector("#resultado").innerHTML = "a media dos 5 números é: " + media.toFixed(2);
+        }
+    </Script>
+
+</body>
+</html>

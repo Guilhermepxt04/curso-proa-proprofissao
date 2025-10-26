@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto diagonal secundaria matriz 3x3</title>
+</head>
+<body>
+    
+    <h1>Produto diagonal secundaria matriz 3x3</h1>
+    <button onclick="SomaDiagonalPrincipal()">Ativar</button>
+
+    <script>
+        function SomaDiagonalPrincipal() {
+            
+            let matriz = [[], [], []];
+            let produto = 1;
+
+            for (let i = 0; i<=2; i++) {
+                for (let j = 0; j<=2; j++) {
+                    let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " "+ (j + 1)));
+
+                    if (i == 0 && j == 2 || i == 1 && j == 1 || i == 2 && j == 0) {
+                        produto *= numero
+                    }
+                    
+
+                    matriz[i].push(numero)
+            }
+            }
+
+            matriz.forEach(linhas => {
+                document.write(linhas + "<br>")
+            })
+
+            document.write("Produto da diagonal secundaria = " + produto);
+
+        }
+    </script>
+
+</body>
+</html>

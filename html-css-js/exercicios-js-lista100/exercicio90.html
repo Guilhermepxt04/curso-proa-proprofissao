@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algum é 0</title>
+</head>
+<body>
+
+    <h1>Algum é 0</h1>
+    <button onclick="Crescente()">Ativar</button>
+    <p></p>
+    <div class="lista"></div>
+    <div class="resultado"></div>
+
+    <script>
+        function Crescente() {
+            let array = []
+            let zero= false 
+            
+            for(let i = 1; i<=5; i++) {
+
+                let numero = parseInt(prompt("Digite o " + i + " numero"));
+
+                array.push(numero);
+
+                if (numero == 0) {
+                    zero = true
+                }
+            }
+
+            document.querySelector(".lista").innerHTML = "lista de numeros digitados = " + array;
+            if (zero) {
+                document.querySelector(".resultado").innerHTML = "Sua lista possui pelo menos um zero"
+            } else {
+                document.querySelector(".resultado").innerHTML = "Sua lista não possui zero"
+            }
+        }
+    </script>
+    
+</body>
+</html>

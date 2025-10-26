@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma das colunas das matrizes 4x4</title>
+</head>
+
+<body>
+
+    <h1>Soma das colunas das matrizes 4x4</h1>
+    <button onclick="SomaColunaMatriz()">Ativar</button>
+
+    <script>
+        function SomaColunaMatriz() {
+
+            let matriz = [ [],[],[],[] ];
+            let colunas = [0, 0, 0, 0];
+
+                for (let i = 0; i <= 3; i++) {
+                    for (let j = 0; j <= 3; j++) {
+                        let numero = parseInt(prompt("Digite o numero na posicao " + (i + 1) + " " + (j + 1)));
+
+                        colunas[i] += numero
+
+                        matriz[i].push(numero)
+                    }
+                }
+
+            matriz.forEach(linhas => {
+                document.write(linhas + "<br>")
+            });
+
+            for (let i = 0; i <= 3; i++)
+                    document.write("Soma da coluna " + (i + 1) + " = " + colunas[i] + "<br>")
+        }
+    </script>
+
+</body>
+
+</html>
